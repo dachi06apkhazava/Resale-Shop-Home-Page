@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@font-face {
+    font-family: 'Druk';
+    src: url('../fonts/DrukWideBold.ttf');
+    font-weight: bolder;
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Druk';
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+a {
+    cursor: url('data:image/x-icon;base64,AAACAAEAICACAA8ADwAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAAAAAAAAAAP+D/gAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAA///////////////////////+/////H////x////8f////H////x////8f////H////x////8f////v//8AfAH+ADgA/wB8Af//7////8f////H////x////8f////H////x////8f////H////x////+//////////////////8='), auto;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -100;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.nav-links {
+    font-size: 7vw;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    text-align: right;
+    width: 95%;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+}
+
+.linksLi, .linkContainer {
+    transform-style: preserve-3d;
+}
+
+.linkContainer {
+    cursor: url('data:image/x-icon;base64,AAACAAEAICACAA8ADwAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAAAAAAAAAAP+D/gAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAA///////////////////////+/////H////x////8f////H////x////8f////H////x////8f////v//8AfAH+ADgA/wB8Af//7////8f////H////x////8f////H////x////8f////H////x////+//////////////////8='), auto;
+    transform: rotateY(-25deg) translateZ(0) scale(1);
+    transform-origin: right center;
+    will-change: transform;
+    transition: transform 1s;
+    text-shadow: 1px 1px 1px #919191,
+                1px 2px 1px #919191,
+                1px 3px 1px #919191,
+                1px 4px 1px #919191,
+                1px 5px 1px #919191,
+                1px 6px 1px #919191,
+                1px 7px 1px #919191,
+                1px 8px 1px #919191,
+                1px 9px 1px #919191,
+                1px 10px 1px #919191,
+                1px 18px 6px rgba(16,16,16,0.4),
+                1px 22px 10px rgba(16,16,16,0.2),
+                1px 25px 35px rgba(16,16,16,0.2),
+                1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.linkContainer:hover {
+    transform: rotateY(-15deg) translateZ(0) scale(1);
+    transition: transform 0.5s;
+}
+
+.linkContainer:hover a {
+    color: rgb(94, 94, 94);
+    transition: color 0.5s;
+}
+
+.logoContainer {
+    font-size: 20px;
+    position: fixed;
+    left: 5%;
+    bottom: 5%;
+}
+
+.logoContainer h1 {
+    transition: color 0.5s;
+    cursor: url('data:image/x-icon;base64,AAACAAEAICACAA8ADwAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAAAAAAAAAAP+D/gAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAA///////////////////////+/////H////x////8f////H////x////8f////H////x////8f////v//8AfAH+ADgA/wB8Af//7////8f////H////x////8f////H////x////8f////H////x////+//////////////////8='), auto;
+    text-shadow: 1px 1px 1px #919191,
+                1px 2px 1px #919191,
+                1px 3px 1px #919191,
+                1px 4px 1px #919191,
+                1px 5px 1px #919191,
+                1px 6px 1px #919191,
+                1px 7px 1px #919191,
+                1px 8px 1px #919191,
+                1px 9px 1px #919191,
+                1px 10px 1px #919191,
+                1px 18px 6px rgba(16,16,16,0.4),
+                1px 22px 10px rgba(16,16,16,0.2),
+                1px 25px 35px rgba(16,16,16,0.2),
+                1px 30px 60px rgba(16,16,16,0.4);
+}
+
+.logoContainer h1:hover {
+    transition: 0.5s;
+    color: black;
+    text-shadow: -1px -1px 0 #797979,  
+                  1px -1px 0 #ffffff,
+                 -1px  1px 0 #ffffff,
+                  1px  1px 0 #ffffff;
+}
+
+.Model{
+    position:fixed;
+    top:0;
+    left:-20%;
+    width:100vw;
+    height:100vh;
+    z-index:-10;
+    overflow:hidden;
+}
